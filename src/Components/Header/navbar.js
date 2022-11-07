@@ -1,5 +1,6 @@
 import React from "react";
 import sneakersLover from "../../img/sneakers_lover.png"
+import {CartWidget} from "./CartWidget"
 
 export const Navbar = () => {
     return(
@@ -19,11 +20,7 @@ export const Navbar = () => {
                     <a href="#">Products</a>
                 </li>
             </ul>
-            <div className="cart">
-                <box-icon name='cart' color='white' animation='tada'></box-icon>
-                <span className="ir">0</span>
-            </div>
-                
+            <CartWidget />
             </header>
         </div>  
 
