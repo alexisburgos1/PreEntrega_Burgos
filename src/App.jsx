@@ -1,22 +1,28 @@
 import React from "react";
-import {Navbar} from "./Components/Header/navbar"
-import {ItemListContainer} from "./Components/Products/ItemListContainer"
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Navbar} from "./Components/Header/navbar";
 import 'boxicons';
-import ReactDom from 'react-dom/client';
-
+import Home from "./Pages/Home/Home";
+import ItemListContainer from "./Pages/ItemListContainer/ItemListContainer";
 
 
 function App() {
   return (
     <div className="App">
       
-      <Navbar />
-      
-      <ItemListContainer message="Welcome! We're sorry to let you know that this site is on Maintenance" bye ="Come back soon!!"/>
-    
+    <BrowserRouter> 
+      <Navbar /> 
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/detail' element={<ItemListContainer/>} />
+        
+      </Routes>
+    </BrowserRouter>
 
-      
-      
     </div>
   );
 }

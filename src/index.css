@@ -46,14 +46,14 @@ header{
   box-shadow: 0 15px 10px black;
   
 }
-a{
+.navbar{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #18002e;
   letter-spacing: 5px ;
 }
-a:hover{
+.navbar:hover{
   color: #ffcc00;
   ;
 }
@@ -113,20 +113,114 @@ header .cart span{
   margin: 0;
   position: absolute;
   top: 30%;
-  left: 48%;
+  left: 35%;
   
 }
 .prodStyle{
   margin: 0;
   position: absolute;
-  top: 40%;
-  left: 38%;
-  
+  top: 25%;
+  left: 25%;
+  text-align: center;
+    
   justify-content: center;
 
 }
+.prodStyle h1{
+  color: #ffcc00;
+  font-size: 40px;
+}
 .bugStyle{
   word-spacing: 100px;
+}
+
+
+.productsContainer{
+  padding: 5rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+  gap: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+
+.ItemDetailStyle{
+  
+  position:static;
+  top: 40%;
+  left: 0%;
+  margin-left: 0px;
+  margin-top: 10px;
+  border: 6px solid transparent;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  box-shadow: 1px 10px 10px 2px rgba(0,0,0, .2);
+  border-radius: 5px;
+}
+.ItemDetailStyle:hover{
+  border: 6px solid #18002e;
+}
+.ItemDetailStyle p{
+  
+  align-items: center;
+}
+.ItemDetailStyle img{
+  width:300px;
+}
+.ItemDetailStyle_footer{
+  padding: 1rem;
+
+}
+.ItemDetailStyle_footer h1{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  
+}
+.ItemDetailStyle_footer p{
+  font-weight: 700;
+  color: rgba(0,0,0, .555);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.ItemDetailStyle_footer .price{
+  font-size: 2rem;
+  color:#18002e;
+}
+.ItemDetailStyle .buttom{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;
+}
+.buttom .btn{
+  border: none;
+  outline:0;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffcc00;
+}
+.buttom button{
+  background-color: rgb(120, 31, 202);
+  max-width: 230px;
+  width: 80%;
+  font-size: 1rem;
+  color: rgb(120, 31, 202);
+  font-weight: 600;
+  padding: 0 1rem;
+  background-color: #ffcc00;
+}
+.buttom a{
+  background-color:#ffcc00;
+  display:grid;
+  text-align: center;
+  align-items: center;
+  
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 
