@@ -10,6 +10,7 @@ export const data = [
         "color": "white",
         "img": Airforce1,
         "price": 100,
+        "brand": 'Nike',
     },
     {
         "id": 2,
@@ -17,6 +18,7 @@ export const data = [
         "color": "black",
         "img": Yung,
         "price": 150,
+        "brand": 'Adidas',
     },
     {
         "id": 3,
@@ -24,6 +26,7 @@ export const data = [
         "color": "red", 
         "img": Jordan1,
         "price": 200,
+        "brand": 'Nike',
     },
     {
         "id": 4,
@@ -31,5 +34,6 @@ export const data = [
         "color": "Blue", 
         "img": Yeezy,
         "price": 250,
+        "brand": 'Adidas',
     },
 ]

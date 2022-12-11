@@ -1,7 +1,7 @@
 import React from "react";
 import sneakersLover from "../../img/sneakers_lover.png"
 import {CartWidget} from "./CartWidget"
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 export const Navbar = () => {
     return(
@@ -15,11 +15,17 @@ export const Navbar = () => {
             </a>
             <ul>
                 <li>
-                    <Link to="/" className="navbar">Home</Link>
+
+                <Link to="/detail/" className="navbar">All Products</Link>
+                
                 </li>
                 <li>
 
-                <Link to="/detail" className="navbar">Products</Link>
+                <Link to="/detail/Nike" className="navbar">Nike</Link>
+                
+                </li>
+                <li>
+                <Link to="/detail/Adidas" className="navbar">Adidas</Link>
                 </li>
             </ul>
             <CartWidget />
