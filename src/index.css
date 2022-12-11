@@ -17,8 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App{
-  
+.App {
   max-width: 1550px;
   width: 100%;
   min-height: 100%;
@@ -26,7 +25,8 @@ code {
   box-sizing: 0 2px 6px green;
   padding: 0 15px;
   box-sizing: border-box;
-
+  
+  justify-content: space-around;
 }
 
 
@@ -130,6 +130,7 @@ header .cart span{
 .prodStyle h1{
   color: #ffcc00;
   font-size: 40px;
+  
 }
 .bugStyle{
   word-spacing: 100px;
@@ -137,15 +138,17 @@ header .cart span{
 
 
 .productsContainer {
-  padding: 0rem 31rem;
-  margin: 0 auto;
-  gap: 1rem 1rem;
-  box-sizing: border-box;
-  text-decoration: none;
+  
+  margin-top: 100px;
+  
+}  
+
+.wholeContainer{
+  
+  display: flex;
+  flex-wrap: wrap;
 }
-
-
-.ItemDetailStyle {
+.productsContainer .ItemDetailStyle {
   position: static;
   top: 40%;
   left: 0%;
@@ -160,6 +163,8 @@ header .cart span{
   justify-content: space-around;
   width: 312px;
   height: 530px;
+  margin-left: 30px;
+  background-color: white;
 }
 .ItemDetailStyle:hover{
   border: 6px solid #18002e;
@@ -170,15 +175,20 @@ header .cart span{
 }
 .ItemDetailStyle img{
   width:300px;
+  height: 300px;
+  
 }
 .ItemDetailStyle_footer{
   padding: 1rem;
+  background-color: white;
 
 }
 .ItemDetailStyle_footer h1{
   font-weight: 600;
   font-size: 1.5rem;
   color: black;
+  background-color: white;
+  
   
 }
 .ItemDetailStyle_footer p{
@@ -186,16 +196,19 @@ header .cart span{
   color: rgba(0,0,0, .555);
   text-transform: uppercase;
   font-size: 18px;
+  background-color: white;
 }
 .ItemDetailStyle_footer .price{
   font-size: 2rem;
   color:#18002e;
+  
 }
 .ItemDetailStyle .buttom{
   width: auto;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
   
   
 }

@@ -41,7 +41,7 @@ const ItemsListContainer = () => {
     
       return (
        
-        <div >  
+        <div className="wholeContainer">  
        
        <ItemList productList={productList}/>
     
